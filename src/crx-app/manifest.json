@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "__MSG_crxName__",
+  "short_name": "__MSG_crxShortName__",
+  "description": "__MSG_crxDescription__",
+
+  "default_locale": "en",
+  "version": "0.1.0",
+  "minimum_chrome_version": "36", // chrome.app.window:innerBounds
+
+  "icons": {
+    "16": "assets/img/icon-16.png", // favicon/infobar
+    "32": "assets/img/icon-32.png", // favicon/infobar @2x (common size on Windows)
+    "48": "assets/img/icon-48.png", // extension management page
+    "128": "assets/img/icon-128.png", // app icon
+    "512": "assets/img/icon-512.png" // app icon @2x
+  },
+
+  "app": {
+    "background": {
+      "scripts": [
+        "assets/js/background.js"
+        ],
+      "persistent": false
+    }
+  },
+
+  "permissions": [
+    
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "crxName": {
+    "message": "Diff Browser",
+    "description": "The name of the extension."
+  },
+  "crxShortName": {
+    "message": "Diff Browser",
+    "description": "The short name of the extension."
+  },
+  "crxDescription": {
+    "message": "A tool to help perform diff comparisons between two URLs.",
+    "description": "This is the plain-text description that shows up summarizing what the extension does. It can't be longer than 132 characters."
+  }
+}
