@@ -27,6 +27,6 @@
   },
 
   "permissions": [
-    
+    "webview"
   ]
 }
