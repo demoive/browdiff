@@ -15,7 +15,7 @@
 
           <form class="form-horizontal">
             <div class="form-group">
-              <div class="col-md-2 text-right">
+              <div class="col-md-2 col-md-offset-1 text-right">
                 <div class="btn-group">
                   <button id="browser-back" class="btn btn-default" title="Back">
                     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -24,14 +24,15 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                   </button>
                 </div>
-
+<!--
                 <label for="browser-refresh" class="sr-only">Refresh</label>
                 <button id="browser-refresh" class="btn btn-default" title="Refresh">
                   <span class="glyphicon glyphicon-refresh"></span>
                 </button>
+-->
               </div>
 
-              <div class="col-md-10">
+              <div class="col-md-8">
                 <div class="input-group">
                   <input id="browser-url" class="form-control" placeholder="URL">
                   <label for="browser-url" class="sr-only">URL</label>
@@ -43,14 +44,16 @@
             </div>
 
             <div class="form-group">
-              <label for="browser-url-proxy" class="col-md-2 control-label">Proxied URL:</label>
-              <div class="col-md-10">
-                <div class="input-group">
+              <label for="browser-url-proxy" class="col-md-2 col-md-offset-1 control-label">Proxied URL:</label>
+              <div class="col-md-8">
+                <!-- <div class="input-group"> -->
                   <input id="browser-url-proxy" class="form-control" placeholder="URL needed in the field above" readonly>
+<!--
                   <span class="input-group-btn">
-                    <button id="browser-url-copy" class="btn btn-default" title="Copy URL">Copy</button>
+                    <button id="browser-url-proxy-copy" class="btn btn-default" title="Copy URL">Copy</button>
                   </span>
-                </div>
+-->
+                <!-- </div> -->
               </div>
             </div>
 
@@ -59,25 +62,25 @@
           <div class="row text-center">
             <div class="col-md-6">
               <h3>Proxied View</h3>
-              <webview id="frame-web-proxied" src=""></webview>
+              <webview id="frame-web-proxied" class="well well-sm"></webview>
             </div>
             <div class="col-md-6">
               <h3>Standard View</h3>
-              <webview id="frame-web-standard" src=""></webview>
+              <webview id="frame-web-standard" class="well well-sm"></webview>
             </div>
           </div>
 
           <div class="row">
             <h4>Diff of Loaded Resources</h4>
 
-            <table id="resources-diff-table" class="table table-hover small">
+            <table id="resources-diff-table" class="table table-bordered table-hover small">
               <tr>
                 <td>index.html<br><small>/</small></td>
                 <td>index.html<br><small>/</small></td>
               </tr>
               <tr class="danger">
                 <td class="danger"></td>
-                <td>styles.css<br><small>http://cdn.site.com/assets/css/</small></td>
+                <td>styles.css<br><small style="color:blue">http://cdn.site.com/assets/css/</small></td>
               </tr>
             </table>
           </div>
