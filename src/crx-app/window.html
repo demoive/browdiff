@@ -7,6 +7,8 @@
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/window.css" rel="stylesheet">
+
+    <script src="vendor/jquery/jquery.min.js"></script>
   </head>
 
   <body>
@@ -34,10 +36,10 @@
 
               <div class="col-md-8">
                 <div class="input-group">
-                  <input id="browser-url" class="form-control" placeholder="URL">
+                  <input type="text" id="browser-url" class="form-control" placeholder="URL">
                   <label for="browser-url" class="sr-only">URL</label>
                   <span class="input-group-btn">
-                    <button id="browser-url-submit" class="btn btn-default">Go</button>
+                    <button type="submit" id="browser-go" class="btn btn-default">Go</button>
                   </span>
                 </div>
               </div>
@@ -69,7 +71,7 @@
               <webview id="frame-web-standard" class="well well-sm"></webview>
             </div>
           </div>
-
+<!--
           <div class="row">
             <h4>Diff of Loaded Resources</h4>
 
@@ -84,8 +86,12 @@
               </tr>
             </table>
           </div>
-
+-->
     </div>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/webview.js"></script>
+    <script src="assets/js/window.js"></script>
 
   </body>
 </html>
