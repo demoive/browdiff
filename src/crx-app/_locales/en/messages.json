@@ -1,14 +1,14 @@
 {
   "crxName": {
-    "message": "Diff Browser",
+    "message": "Browdiff",
     "description": "The name of the extension."
   },
   "crxShortName": {
-    "message": "Diff Browser",
+    "message": "Unibrow",
     "description": "The short name of the extension."
   },
   "crxDescription": {
-    "message": "A tool to help perform diff comparisons between two URLs.",
+    "message": "A browser-like tool that performs side-by-side comparisons as you browse sites.",
     "description": "This is the plain-text description that shows up summarizing what the extension does. It can't be longer than 132 characters."
   }
 }
